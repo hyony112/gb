@@ -1,0 +1,16 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>비공개 접근</title>
+</head>
+<body>
+  <h2>🔐 비밀번호를 입력하세요</h2>
+  <input type="password" id="password" onkeypress="if(event.keyCode==13) checkPassword()" />
+  <button onclick="checkPassword()">확인</button>
+  <p id="result" style="color: red;"></p>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
